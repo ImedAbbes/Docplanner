@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    justify-content:space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    opacity: 0.98;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0 0 9px 0 gainsboro;
+}
+#header .logo{
+    cursor: pointer;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;    
+}
+.menu ul li{
+    margin-left: 10px;
+}
+.dropbtn{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+.dropbtn:hover{
+    color: #00B39B;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    width: max-content;
+}
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+    color:gray;
+    background-color: white;
+    padding: 20px;
+    margin-top: 2px;
+    
+}
+.dropdown-content a:hover{
+    background-color: rgba(205, 220, 204, 0.252);
+    color: #00B39B;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    box-shadow: 0 3px 0 2px rgba(220, 220, 220, 0.22);
+}
+#goal img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+h1{
+    color: #00B39B;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+}
+.ourgoals{
+    display: flex;
+    max-width: 95%;
+}
+.ourgoals p{
+    text-align: justify;
+    padding: 40px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 95%;
+}
+.box{
+    border-radius: 10px;
+    width: 25%;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 240px;
+}
+.box p{color: white;}
+/* should change color in hover */
+.box:hover{
+    filter: brightness(80%);
+}
+.patients{
+    background-color: #00B39B;
+    
+}
+.doctors{
+    background-color: blue;
+}
+.clinics{
+    background-color: black;
+}
+.select select{
+    background-color: transparent;
+    border: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    color: inherit;
+}
+
+#brand{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: 95%;
+    padding: 20px;
+}
+#brand .symbol{
+    width: 40%;
+    padding: 20px;
+}
+#brand .symbol h1{
+    text-align: justify;
+    padding: 20px;
+}
+.brandlogos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.brandlogos img{
+    filter: grayscale(100%);
+    
+    margin-right: 20px;
+}
+.brandlogos img:hover{
+    filter: grayscale(0%);
+}
+#stats{
+    background-color: #00b39b1b;
+    padding: 40px;
+    display: flex;
+}
+.sbox{
+    background-color: white;
+    margin: 5px;
+    width:200px ;
+    height: 200px;
+    padding: 20px;
+    border-radius: 2px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sbox h2{
+    color: #00B39B;
+    font-family: 'Courier New', Courier, monospace;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.app_num{
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.pat_num{
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+#cities .symbol{
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+.sites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+.city {
+    border: 1px solid rgba(128, 128, 128, 0.136);
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.city:hover{
+    display: block;
+    box-shadow: 5px 10px 30px grey;
+}
+.cbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: gray;
+    font-family:'Courier New', Courier, monospace    
+}
+.opening{
+    background-color: rgba(0, 0, 255, 0.653);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.opening:hover {
+    background-color: blue;
+}
+#joinus{
+    margin: 30px;
+    padding: 30px;
+}
+#joinus h1{
+    color: black;
+    margin-bottom: 30px;
+}
+#joinus .opening{
+    padding: 10px 20px 10px 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+footer p{
+    margin: 20px;
+    text-align: center;
+    font-size: small;
+}
+footer a{
+    text-decoration: none;
+    color: blue;
+}
+footer a:hover{
+    text-decoration: underline;
+}
